@@ -1,0 +1,341 @@
+<html>
+
+<head>
+    {{>header}}
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="/loggedIn"><img src="images/logo.png" width="80px" height="50px"></a></li>
+            <li><a href="/loggedInLifestyle">Healthy Lifestyle</a></li>
+            <li><a class="active" href="/loggedInFitness">Fitness</a></li>
+            <li><a href="/loggedInNutrition">Nutrition</a></li>
+            <li><a href="/loggedIn">Home</a></li>
+
+        </ul>
+    </nav>
+
+
+    <div class="slider2">
+        <figure>
+            <div class="slide">
+                <img src="images/index3.png" alt="Hand stacking blocks">
+            </div>
+        </figure>
+
+    </div>
+
+    <h1 id="exercise" class="section_heading">Fitness</h1>
+
+    <nav id="nav2">
+        <ul>
+            <li><a class="active" href="#exercise">Exercise</a></li>
+            <li><a href="#home_workout">Home Work</a></li>
+            <li><a href="#fitness_goals">Goals</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="content">
+
+        <div class="text-right" style="margin-bottom: 1em;">
+            {{^user}}
+            <a id="login" href="/register" class="btn form_button">
+                Register
+            </a>
+            <a id="login" href="/login" class="btn form_button">
+                Sign in
+            </a>
+            {{/user}}
+            {{#user}}
+            <a id="logout" href="/logout" class="btn form_button">
+                Sign out
+            </a>
+            {{/user}}
+        </div>
+
+        <div>
+            <h1>Exercise</h1>
+
+            <h2>What is exercise?</h2>
+            <p>
+                Exercise refers to physical activity that is performed with the intention of improving or maintaining
+                physical fitness and overall health. Exercise can take many forms, including cardiovascular activities
+                like running, cycling, or swimming, strength training exercises using weights or resistance bands, and
+                flexibility or balance exercises like yoga or Pilates.
+
+                <br>
+                <br>
+                The intensity and duration of exercise can vary depending on individual fitness levels and goals.
+                However, regular exercise is generally recommended for most people to maintain good health and reduce
+                the risk of chronic diseases such as heart disease, diabetes, and certain cancers.
+
+
+                <br>
+                <br>
+                The benefits of exercise are numerous, including improving cardiovascular health, increasing muscle
+                strength and endurance, reducing body fat, improving bone density, improving cognitive function,
+                reducing stress and anxiety, and improving overall mood and well-being.
+
+
+                <br>
+                <br>
+                It's important to consult with a healthcare professional before starting any new exercise program,
+                especially if you have any underlying health conditions or concerns. Additionally, it's important to
+                choose activities that you enjoy and that fit into your lifestyle to make exercise a sustainable habit.
+
+            </p>
+
+            <h2>Importance</h2>
+            <p>Maintaining a healthy diet involves making conscious food choices
+                and developing sustainable eating
+                habits. Here are some tips to help you maintain a healthy diet:
+
+
+            <ol class="list">
+                <li>
+                    Eat a variety of nutrient-dense foods:
+                    <p>
+                        Incorporate a variety of fruits, vegetables, whole grains,
+                        lean proteins, and healthy fats into your diet. This will ensure that you get all the essential
+                        nutrients your body needs to function optimally.
+                    </p>
+                </li>
+                <li>
+                    Control your portion sizes:
+                    <p>
+                        Overeating can lead to weight gain and other health problems. Use
+                        smaller plates, measure your food, and eat slowly to help you control your portions.
+                    </p>
+                </li>
+                <li>
+                    Limit processed foods and added sugars:
+                    <p>
+                        Processed foods and added sugars can be high in calories and
+                        low in nutrients. Limit your intake of these foods and choose whole, natural foods whenever
+                        possible.
+                    </p>
+                </li>
+                <li>
+                    Drink plenty of water:
+                    <p>
+                        Staying hydrated is essential for good health. Aim to drink at least 8-10
+                        glasses of water per day, and avoid sugary drinks like soda and juice.
+                    </p>
+                </li>
+                <li>
+                    Plan ahead:
+                    <p>
+                        Plan your meals in advance to ensure that you have healthy options available. This can
+                        also help you save time and money.
+
+                    </p>
+                </li>
+                <li>
+                    Be mindful of your eating habits:
+                    <p>
+                        Pay attention to your hunger and fullness cues, and avoid
+                        distractions like TV or your phone while eating. This can help you avoid overeating and make
+                        healthier food choices.
+                    </p>
+                </li>
+            </ol>
+            </p>
+
+
+        </div>
+
+
+        <div>
+            <h2>Exercise Types</h2>
+            <section id="page_icons">
+                <img src="images/yoga.jpeg" class="section_icon2" alt="Person doing yoga infront of sunset">
+                <img src="images/pilates.webp" class="section_icon2" alt="Woman doing pilates">
+                <img src="images/Aerobics.jpeg" class="section_icon2" alt="Group of doing Aerobics">
+                <img src="images/Strength.webp" class="section_icon2" alt="Man lifting weights">
+            </section>
+
+            <section id="icon_title">
+                <p>Yoga</p>
+                <p>Pilates</p>
+                <p>Aerobics</p>
+                <p>Strength training</p>
+            </section>
+
+            <section id="page_icons">
+                <img src="images/Walking.png" class="section_icon2" alt="Man & woman Walking">
+                <img src="images/Running.jpg" class="section_icon2" alt="Man Running Uphill">
+                <img src="images/Swimming.jpg" class="section_icon2" alt="Person Swimming">
+                <img src="images/Cycling.jpg" class="section_icon2" alt="Person Cycling">
+            </section>
+            <p id="home_workout"></p>
+
+            <section id="icon_title">
+                <p>Walking</p>
+                <p>Running</p>
+                <p>Swimming</p>
+                <p>Cycling</p>
+            </section>
+        </div>
+
+
+        <div>
+            <h1>Home Workouts</h1>
+
+            <h2>Benefits of a home workout</h2>
+            <p>
+                Exercise is important for maintaining good physical and mental health. Here are some of the key reasons
+                why exercise is important:
+
+            <ol class="list">
+                <li>
+                    Convenience:
+                    <p>
+                        One of the biggest benefits of a home workout is convenience. You can exercise whenever you want
+                        without having to travel to a gym or fitness center, saving time and money.
+                    </p>
+                </li>
+                <li>
+                    Flexibility:
+                    <p>
+                        A home workout allows you to choose your workout time and tailor your routine to your specific
+                        fitness goals and preferences.
+                    </p>
+                </li>
+                <li>
+                    Privacy:
+                    <p>
+                        Exercising at home provides privacy, which can be especially beneficial for individuals who feel
+                        self-conscious or intimidated working out in a gym.
+                    </p>
+                </li>
+                <li>
+                    Cost-effective:
+                    <p>
+                        Home workouts can be cost-effective, as they don't require a gym membership or expensive
+                        equipment. Bodyweight exercises and simple equipment like resistance bands or dumbbells can
+                        provide an effective workout.
+                    </p>
+                </li>
+                <li>
+                    Reduces barriers:
+                    <p>
+                        Home workouts can reduce barriers to exercise, such as childcare or transportation issues,
+                        making it easier to establish a consistent exercise routine.
+                    </p>
+                </li>
+                <li>
+                    Reduces exposure to germs:
+                    <p>
+                        Home workouts reduce the risk of exposure to germs and infections that may be present in gym
+                        equipment or shared spaces.
+                    </p>
+                </li>
+                <li>
+                    Enhances cognitive function:
+                    <p>
+                        Regular exercise has been linked to improved cognitive function, including better memory,
+                        attention, and decision-making abilities.
+                    </p>
+                </li>
+            </ol>
+            </p>
+
+            <h2>Workouts</h2>
+            <section id="page_icons">
+                <a href="https://www.youtube.com/watch?v=g_tea8ZNk5A">
+                    <img src="images/yoga-class.jpeg" class="section_icon2" alt="Hand stacking blocks">
+                </a>
+                <a href="https://www.youtube.com/watch?v=G16eeqO2U7g">
+                    <img src="images/Pilates-class.jpg" class="section_icon2" alt="Hand stacking blocks">
+                </a>
+                <a href="https://www.youtube.com/watch?v=oFON1wxbdjw">
+                    <img src="images/aerobics-class.jpg" class="section_icon2" alt="Hand stacking blocks">
+                </a>
+                <a href="https://www.youtube.com/watch?v=dThKz4oNHF4">
+                    <img src="images/weighlighting-class.jpg" class="section_icon2" alt="Hand stacking blocks">
+                </a>
+            </section>
+
+
+            <section id="icon_title">
+                <p>Yoga</p>
+                <p>Pilates</p>
+                <p>Aerobics</p>
+                <p>Strength training</p>
+            </section>
+
+            <section id="page_icons">
+                <a href="https://www.youtube.com/watch?v=enYITYwvPAQ">
+                    <img src="images/walking-group.jpeg" class="section_icon2" alt="Hand stacking blocks">
+                </a>
+                <a href="https://www.youtube.com/watch?v=c7j36ZeoR-w">
+                    <img src="images/racce.jpg" class="section_icon2" alt="Hand stacking blocks">
+                </a>
+                <a href="https://www.youtube.com/watch?v=nlGsZTsZaFc">
+                    <img src="images/swimming-class.jpeg" class="section_icon2" alt="Hand stacking blocks">
+                </a>
+                <a href="https://www.youtube.com/watch?v=IQhWz82mozw">
+                    <img src="images/cycling-group.jpg" class="section_icon2" alt="Hand stacking blocks">
+                </a>
+            </section>
+
+            <section id="icon_title">
+                <p>Walking</p>
+                <p>Running</p>
+                <p>Swimming</p>
+                <p>Cycling</p>
+            </section>
+        </div>
+
+        <div>
+            <h1 id="fitness_goals">Goals</h1>
+
+            <p>A user can utilise this tool to specify a specific goal.
+                This feature will need the user to enter a title for
+                the goal they want to attain, a deadline for achieving
+                it, and an optional remark section.<br><br>
+
+                This goal feature will be included in each component
+                of the application, allowing them to select a goal
+                relevant to the specific portion.
+            </p>
+
+
+
+            <div class="text-right">
+                <a href="/newFitness" class="btn form_button">
+                    Add a Goal
+                </a>
+            </div>
+            
+            <div >
+                {{#fitness}}
+                <div class="goals">
+                    <h4 class="goalsTitle">{{subject}}</h4>
+                    <p goalsP>
+                        {{contents}}
+                    </p>
+                    <p>
+                        To be completed by: {{completionDate}}
+                    </p>
+                    <div id="authorPostBit" class="card-footer">
+                        <p>Written by <a href="/posts/{{author}}">{{author}}</a>, on {{published}}</p>
+                    </div>
+                </div>
+                <hr>
+                {{/fitness}}
+
+                {{^fitness}}
+                <p class="no_entries">No entries yet.</p>
+                {{/fitness}}
+            </div>
+
+            
+        </div>
+    </div>
+</body>
+
+</html>

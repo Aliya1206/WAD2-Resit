@@ -1,0 +1,348 @@
+<html>
+
+<head>
+    {{>header}}
+
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="/loggedIn"><img src="images/logo.png" width="80px" height="50px"></a></li>
+            <li><a href="/loggedInLifestyle">Healthy Lifestyle</a></li>
+            <li><a href="/loggedInFitness">Fitness</a></li>
+            <li><a class="active" href="/loggedInNutrition">Nutrition</a></li>
+            <li><a href="/loggedIn">Home</a></li>
+
+        </ul>
+    </nav>
+
+    <div class="slider2">
+        <figure>
+            <div class="slide">
+                <img src="images/index2.png" alt="Hand stacking blocks">
+            </div>
+        </figure>
+
+    </div>
+
+    <h1 id="healthy_diet" class="section_heading">Nutrition</h1>
+
+    <nav id="nav2">
+        <ul>
+            <li><a class="active" href="#healthy_diet">Healthy Diet</a></li>
+            <li><a href="#plant_based">Plant-based Diet</a></li>
+            <li><a href="#calories">Calories</a></li>
+            <li><a href="#nutrition_goals">Goals</a></li>
+        </ul>
+    </nav>
+
+
+
+
+    <div class="content">
+
+        <div class="text-right" style="margin-bottom: 1em;">
+            {{^user}}
+            <a id="login" href="/register" class="btn form_button">
+                Register
+            </a>
+            <a id="login" href="/login" class="btn form_button">
+                Sign in
+            </a>
+            {{/user}}
+            {{#user}}
+            <a id="logout" href="/logout" class="btn form_button">
+                Sign out
+            </a>
+            {{/user}}
+        </div>
+
+        <div>
+            <h1>Healthy Sustainable Diet</h1>
+
+            <h2>What is a healthy sustainable diet?</h2>
+            <p>
+                A healthy sustainable diet is a way of eating that
+                promotes overall health and well-being while minimizing
+                negative environmental impact. It involves consuming a
+                variety of nutrient-dense foods, including whole grains,
+                fruits, vegetables, lean proteins, and healthy fats, while
+                limiting processed foods, added sugars, and unhealthy fats.
+                Additionally, a sustainable diet emphasizes
+                the consumption of locally sourced and seasonally available
+                foods, as well as plant-based options, to
+                reduce the carbon footprint and support local agriculture.
+                Overall, a healthy sustainable diet is a
+                balanced and mindful approach to food that considers both
+                personal health and the health of the planet.
+            </p>
+
+            <h2>How to maintain a healthy diet?</h2>
+            <p>Maintaining a healthy diet involves making conscious food choices
+                and developing sustainable eating
+                habits. Here are some tips to help you maintain a healthy diet:
+
+
+            <ol class="list">
+                <li>
+                    Eat a variety of nutrient-dense foods:
+                    <p>
+                        Incorporate a variety of fruits, vegetables, whole grains,
+                        lean proteins, and healthy fats into your diet. This will ensure that you get all the essential
+                        nutrients your body needs to function optimally.
+                    </p>
+                </li>
+                <li>
+                    Control your portion sizes:
+                    <p>
+                        Overeating can lead to weight gain and other health problems. Use
+                        smaller plates, measure your food, and eat slowly to help you control your portions.
+                    </p>
+                </li>
+                <li>
+                    Limit processed foods and added sugars:
+                    <p>
+                        Processed foods and added sugars can be high in calories and
+                        low in nutrients. Limit your intake of these foods and choose whole, natural foods whenever
+                        possible.
+                    </p>
+                </li>
+                <li>
+                    Drink plenty of water:
+                    <p>
+                        Staying hydrated is essential for good health. Aim to drink at least 8-10
+                        glasses of water per day, and avoid sugary drinks like soda and juice.
+                    </p>
+                </li>
+                <li>
+                    Plan ahead:
+                    <p>
+                        Plan your meals in advance to ensure that you have healthy options available. This can
+                        also help you save time and money.
+                    </p>
+                </li>
+                <li>
+                    Be mindful of your eating habits:
+                    <p>
+                        Pay attention to your hunger and fullness cues, and avoid
+                        distractions like TV or your phone while eating. This can help you avoid overeating and make
+                        healthier food choices.
+                    </p>
+                </li>
+
+            </ol>
+            </p>
+
+            <h2>Healthy Foods</h2>
+            <section id="page_icons">
+                <img src="images/apple.jpeg" class="section_icon2" alt="Apples">
+                <img src="images/egg.jpeg" class="section_icon2" alt="Eggs">
+                <img src="images/oil.png" class="section_icon2" alt="Olive Oil">
+                <img src="images//spinach.jpeg" class="section_icon2" alt="Spinach">
+            </section>
+
+            <section id="icon_title">
+                <p>Apples</p>
+                <p>Eggs</p>
+                <p>Olive Oil</p>
+                <p>Spinach</p>
+            </section>
+
+            <section id="page_icons">
+                <img src="images/Hazelnuts.webp" class="section_icon2" alt="Hazelnuts">
+                <img src="images/fresh-salmon.jpg" class="section_icon2" alt="Fresh Salmon with seasoning">
+                <img src="images/tomatoes.jpg" class="section_icon2" alt="Tomatoes">
+                <img src="images/whole-grain.jpg" class="section_icon2" alt="Whole Grains in bowls">
+            </section>
+
+            <p id="plant_based"></p>
+            <section id="icon_title">
+                <p>Hazelnuts</p>
+                <p>Salmon</p>
+                <p>Tomatoes</p>
+                <p>Whole Grains</p>
+            </section>
+        </div>
+
+
+        <div>
+            <h1>Plant Based Diet</h1>
+
+            <h2>What is a plant based diet?</h2>
+            <p>
+                A plant-based diet is a way of eating that emphasizes foods derived from plants, such as fruits,
+                vegetables, whole grains, legumes, nuts, and seeds. While there are different variations of plant-based
+                diets, they all prioritize foods that come from plant sources rather than animal sources.
+
+                <br>
+                <br>
+
+                Plant-based diets may or may not exclude animal products altogether. For example, a vegan diet is a type
+                of plant-based diet that excludes all animal products, including meat, dairy, eggs, and honey. On the
+                other hand, a vegetarian diet may include some animal products, such as dairy and eggs, but excludes
+                meat.
+                <br>
+                <br>
+                Research has shown that a plant-based diet can offer a range of health benefits, including lower risk of
+                heart disease, type 2 diabetes, and certain cancers. It may also be more environmentally sustainable
+                than diets that are heavy in animal products, as plant-based foods tend to have a lower carbon
+                footprint.
+
+                <br>
+                <br>
+                Overall, a plant-based diet can be a healthy and sustainable way of eating that prioritizes whole,
+                nutrient-dense foods while minimizing or eliminating processed and animal-based foods.
+
+            </p>
+
+            <h2>Benefits of a plant based diet</h2>
+            <p>
+                Provide an example of a plant-based diet.
+            <ol class="list">
+                <li>
+                    Improved overall health:
+                    <p>
+                        Plant-based diets have been linked to a lower risk of chronic diseases, such as heart disease,
+                        type 2 diabetes, certain cancers, and hypertension. They can also promote healthy weight
+                        management and improve overall gut health.
+                    </p>
+                </li>
+                <li>
+                    Lower risk of heart disease:
+                    <p>
+                        Plant-based diets have been shown to reduce the risk of heart disease, as they are typically
+                        lower in saturated and trans fats, which can contribute to elevated cholesterol levels.
+                    </p>
+                </li>
+                <li>
+                    Improved digestion:
+                    <p>
+                        Plant-based diets are rich in fiber, which can promote regular bowel movements and improve
+                        overall gut health.
+                    </p>
+                </li>
+                <li>
+                    Increased energy
+                    <p>
+                        A diet high in whole plant foods can provide sustained energy throughout the day, without the
+                        energy spikes and crashes that can come from consuming highly processed foods.
+                    </p>
+                </li>
+                <li>
+                    Better environmental sustainability
+                    <p>
+                        Plant-based diets have a lower carbon footprint than diets that are heavy in animal products, as
+                        raising and processing animal products requires significantly more resources, including land,
+                        water, and energy.
+                    </p>
+                </li>
+                <li>
+                    Lower healthcare costs:
+                    <p>
+                        Lower healthcare costs: A plant-based diet can help prevent chronic diseases and reduce
+                        healthcare costs associated with these conditions.
+                    </p>
+                </li>
+
+
+            </ol>
+            </p>
+
+            <h2>Plant Based Foods</h2>
+            <section id="page_icons">
+                <img src="images/chia.jpeg" class="section_icon2" alt="Chia Seeds">
+                <img src="images/tofu.jpg" class="section_icon2" alt="Tofu">
+                <img src="images/bead.webp" class="section_icon2" alt="Bread">
+                <img src="images/chickpea.webp" class="section_icon2" alt="Chickpeas">
+            </section>
+
+            <section id="icon_title">
+                <p>Chia Seeds</p>
+                <p>Tofu</p>
+                <p>Bread</p>
+                <p>Chickpeas</p>
+            </section>
+
+            <section id="page_icons">
+                <img src="images/noogles.jpg" class="section_icon2" alt="Noodles">
+                <img src="images/Quinoa.webp" class="section_icon2" alt="Quinoa">
+                <img src="images/oats.webp" class="section_icon2" alt="Oats">
+                <img src="images/Broccoli.jpg" class="section_icon2" alt="Broccoli">
+            </section>
+            <p id="calories"></p>
+            <section id="icon_title">
+                <p>Noodles</p>
+                <p>Quinoa</p>
+                <p>Oats</p>
+                <p>Broccoli</p>
+            </section>
+        </div>
+
+        <div>
+            <h1>Calories </h1>
+
+            <h2>Definition</h2>
+            <p>Calories are a measure of energy. Specifically, they are a measure of the amount of energy that is stored
+                in food and released when the food is metabolized by the body. Calories are used by the body to fuel
+                physical activity, maintain body temperature, and carry out other essential functions.
+            </p>
+
+            <h2>Importance of Tracking Calories</h2>
+            <p>
+                It is important to watch what you eat because consuming too many calories can lead to weight gain and a
+                range of health problems associated with obesity, such as diabetes, heart disease, and certain cancers.
+                Conversely, consuming too few calories can lead to malnutrition and other health problems. By monitoring
+                your calorie intake and making healthy food choices, you can maintain a healthy weight and reduce your
+                risk of chronic diseases.
+            </p>
+        </div>
+
+        <div>
+            <h1 id="nutrition_goals">Goals</h1>
+
+            <p>A user can utilise this tool to specify a specific goal.
+                This feature will need the user to enter a title for
+                the goal they want to attain, a deadline for achieving
+                it, and an optional remark section.<br><br>
+
+                This goal feature will be included in each component
+                of the application, allowing them to select a goal
+                relevant to the specific portion.
+            </p>
+
+            <div class="text-right">
+                <a href="/newNutrition" class="btn form_button">
+                    Add a Goal
+                </a>
+            </div>
+
+            <div>
+                {{#nutrition}}
+                <div class="goals">
+                    <h4 class="goalsTitle">{{subject}}</h4>
+                    <p goalsP>
+                        {{contents}}
+                    </p>
+                    <p>
+                        To be completed by: {{completionDate}}
+                    </p>
+                    <div id="authorPostBit" class="card-footer">
+                        <p>Written by <a href="/posts/{{author}}">{{author}}</a>, on {{published}}</p>
+                    </div>
+                </div>
+                <hr>
+                {{/nutrition}}
+
+                {{^nutrition}}
+                <p class="no_entries">No entries yet.</p>
+                {{/nutrition}}
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

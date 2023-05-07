@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    {{>header}}
+</head>
+
+<body>
+    <div class="background-image">
+        <div class="overlay">
+            <div class="text">
+                <h1>Register</h1>
+                <p>
+                    Register to have full access to the nutrition, fitness, and healthy lifestyle pages.<br>
+                    Create and establish goals for each page, and access important information about each page.
+                </p>
+            </div>
+
+            <div class="forum">
+
+                <form class="form" method="post" role="/register">
+                    <h1 class="form_title">Join Hyping Health</h1>
+                    <p class="form_text">
+                        to keep a record of your personal health goals and recieve important information
+                    </p>
+                    <div class="form_input-group">
+                        {{user-name-error}}
+                        <label for="username">User Name</label>
+                        <input type="text" id="form_input" class="form-control" id="username" name="username"
+                            placeholder="Enter user name" required>
+                    </div>
+                    <div class="form_input-group">
+                        <label for="password">Password (8 characters minimum)</label>
+                        <input type="password" id="form_input" class="form-control" id="pass" name="pass"
+                            placeholder="Enter password" minlength="8" required>
+                    </div>
+
+                    <div>
+                        <input id="form_button" type="submit" value="Register" class="btn btn-primary">
+                    </div>
+
+                    <p class="form_text">Already have an account? <a href="/login"> Log in </a> </p>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

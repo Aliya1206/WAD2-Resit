@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    {{>header}}
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="profile.html"><img src="images/logo.png" width="80px" height="50px"></a></li>
+            <li><a href="/lifestyle">Healthy Lifestyle</a></li>
+            <li><a href="/fitness">Fitness</a></li>
+            <li><a class="active" href="/nutrition">Nutrition</a></li>
+            <li><a href="/">Home</a></li>
+
+        </ul>
+    </nav>
+
+
+    <div class="slider2">
+        <figure>
+            <div class="slide">
+                <img src="images/index2.png" alt="Hand stacking blocks">
+            </div>
+        </figure>
+    </div>
+
+    <h1 class="section_heading">Nutrition</h1>
+
+
+    <div class="content">
+        <div>
+
+            <h2>Add a Goal</h2>
+            <form method="post" role="form" action="/newNutrition">
+                <div class="form-group">
+                    <label class="form-label" for="author">Author</label>
+                    <input type="text" class="form-control" id="author" name="author" placeholder="Written by" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="subject">Subject</label>
+                    <input type="text" class="form-control" id="subject" name="subject"
+                        placeholder="Enter a subject line" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="contents">Entry text</label>
+                    <textarea class="form-control" id="contents" name="contents" placeholder="Enter your comments here."
+                        rows="3" required>
+                    </textarea>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="completionDate">Completion Date</label>
+                    <input type="date" class="form-control" id="completionDate" name="completionDate" required>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Post Goal" class="btn form_button">
+                </div>
+            </form>
+
+        </div>
+
+
+
+
+
+</body>
+
+</html>

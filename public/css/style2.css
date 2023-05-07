@@ -1,0 +1,1019 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 97%;
+
+}
+
+
+/* Goals styles */
+/* Goals styles */
+/* Goals styles */
+
+.goals {
+    background: aliceblue;
+    margin: 10px;
+    margin-bottom: 10px;
+}
+
+
+.goalsP {
+    margin: 3rem;
+}
+
+div#authorPostBit {
+    background: #eb91a882;
+}
+
+
+div#authorPostBit p {
+    margin: 0;
+}
+
+/* Goals styles  END*/
+/* Goals styles  END*/
+/* Goals styles  END*/
+
+
+/* Login and Register Style  */
+/* Login and Register Style  */
+/* Login and Register Style  */
+.background-image {
+    width: 100%;
+    height: 100vh;
+    background-position: centre;
+    background-size: cover;
+    background-image: url(../images/1.png);
+    background-repeat: no-repeat;
+}
+
+.overlay {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.text {
+    color: #000000;
+}
+
+.text h1 {
+    position: absolute;
+    text-align: left;
+    font-size: 60px;
+    padding-top: 250px;
+    padding-left: 50px;
+}
+
+.text p {
+    position: absolute;
+    text-align: left;
+    font-size: 20px;
+    padding-top: 350px;
+    padding-left: 50px;
+}
+
+
+.forum {
+    /**font: 20px 'Quicksand', Calibri;**/
+    width: 700px;
+    max-width: 500px;
+    margin: 4rem;
+    padding: 2rem;
+    box-shadow: 0 0 15px rgb(0, 0, 0);
+    float: right;
+    border-radius: 50px;
+    background: #f5f5f5;
+    position: absolute;
+    z-index: 2;
+    margin-left: 1000px;
+    margin-top: 140px;
+
+}
+
+
+.form-hidden {
+    display: none;
+}
+
+.form>*:first-child {
+    margin-top: 0;
+    margin-bottom: 40px;
+
+}
+
+.form>*:last-child {
+    margin-bottom: 0;
+    margin-top: 10px;
+
+}
+
+/* Title Styles */
+.form_title {
+    margin: 2rem 2rem 0 0;
+    text-align: center;
+    width: 100%;
+}
+
+/* Success/Error Message Styles (YET TO BE USED) */
+.form_message {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.form_message--success {
+    color: #4bb544;
+}
+
+.form_message--error {
+    color: #cc3333;
+}
+
+/* Input Styles */
+.form_input-group {
+    margin-bottom: 1rem;
+    display: flex;
+    /* Extremely Important for keeping the labels and text-fields inline*/
+    font-size: 19px;
+}
+
+/* Label Styles */
+label {
+    margin-right: 10px;
+    margin-left: 20px;
+    width: 100%;
+    text-align: left;
+}
+
+/* Text-Fields Styles */
+#form_input {
+    object-fit: fill;
+    text-align: left;
+    max-height: 36px;
+    box-sizing: border-box;
+    border: 1px solid rgb(176, 170, 170);
+    outline: none;
+    background: #ffffff;
+    transition: background 0.2s, border-color 0.2s;
+    margin-right: 20px;
+}
+
+/* Drop Down Select Box Styles */
+.form_select {
+    width: 100%;
+    text-align: left;
+    max-height: 36px;
+    box-sizing: border-box;
+    border: 1px solid rgb(176, 170, 170);
+    outline: none;
+    background: #ffffff;
+    transition: background 0.2s, border-color 0.2s;
+    margin-right: 20px;
+}
+
+.form_input:focus {
+    border-color: #000000;
+    background: #ffffff;
+}
+
+.form_input--error {
+    color: #cc3333;
+    border-color: #ffffff;
+}
+
+.form_input-error-message {
+    color: #cc3333;
+}
+
+/* Main Button Styles */
+.form_button {
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    background: #a7d3ed;
+}
+
+
+
+#form_button {
+    width: 236px;
+    margin: 10px;
+    margin-left: 25%;
+    padding: 1rem 1rem;
+    color: #ffffff;
+    font-size: 18px;
+    border: none;
+    border-radius: 12px;
+    outline: none;
+    cursor: pointer;
+    background: #a7d3ed;
+    margin-bottom: 10px;
+}
+
+/* Button Interactivity */
+.form_button:hover,
+#form_button:hover {
+    background: #72c3f2;
+    color: #ffffff;
+}
+
+.form_button:active,
+#form_button:active {
+    transform: scale(0.98);
+}
+
+
+/* Back Button Styles */
+.form_back {
+    margin-left: 12rem;
+    height: 20px;
+    width: 60px;
+    padding: 2px;
+    color: #000000;
+    border: solid black 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #afb1af;
+    text-align: center;
+}
+
+/* Specific Enter Button In Forgotten Password Styles */
+#forgotpasswordEnter {
+    width: 146px;
+    height: 65px;
+    margin-bottom: 188px;
+    text-align: center;
+}
+
+
+.form_text {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+
+}
+
+.form-label {
+    font-size: 22px;
+    /* font-weight: bold; */
+    margin-left: revert;
+}
+
+/* Login and Register Style  END */
+/* Login and Register Style  END */
+/* Login and Register Style  END */
+
+.no_entries {
+    background-color: #dfe3df7b;
+    padding: 10px;
+    /* text-align: center; */
+}
+
+
+
+.section_heading {
+    background-color: #C4E0F0;
+    padding: 0.5rem 0.5rem 0.5rem 5rem;
+}
+
+.content {
+    /* border: 1px solid; */
+    /* padding: 3rem 0.5rem 0.5rem 0.5rem; */
+    margin: auto 8rem;
+}
+
+.content div {
+    margin: 3rem auto;
+}
+
+.content div h1 {
+    margin: 2rem auto;
+    background-color: #C4E0F0;
+}
+
+.content div h1[id] {
+    /* margin-top: 100px; */
+    padding-top: 0;
+}
+
+.content div h2 {
+    margin: 1rem auto;
+    background-color: #eb91a882;
+    /* background-color: #d0dfe7; */
+
+}
+
+h2 ol li {
+    font-weight: bold;
+}
+
+.content p {
+    margin: 1rem auto 2rem;
+}
+
+.list {
+    margin-left: 2rem;
+}
+
+.list li {
+    font-weight: bold;
+}
+
+.list li::marker {
+    color: #6abae8;
+}
+
+
+.list li p {
+    font-weight: 200;
+    margin-left: 2rem;
+
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+#logo {
+    margin-right: 80%;
+
+}
+
+/* Nav Bar Style */
+nav {
+    /* display: flex;
+    float: right; */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+nav ul li {
+    float: right;
+    padding-left: 15px;
+}
+
+nav ul li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover:not(.active) {
+    background-color: #eb91a8be;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav a.active {
+    background-color: #C4E0F0;
+
+}
+
+.section_heading {
+    background-color: #C4E0F0;
+}
+
+#nav2 {
+    /* margin-left: 3.5rem; */
+
+}
+
+#nav2 ul {
+    background-color: #A7C4D5;
+
+}
+
+#nav2 ul li {
+    float: left;
+    padding-left: 2px;
+}
+
+#nav2 ul li:first-child {
+    margin-left: 4rem;
+
+}
+
+#nav2 a.active {
+    background-color: rgba(91, 144, 173, 0.741);
+    color: #f5f5f5;
+    /* text-decoration: underline; */
+
+}
+
+#nav2 a:hover {
+    background-color: #eb91a8a5;
+    color: #ffffff;
+}
+
+
+#nav ul li a:hover:not(.active) {
+    background-color: #c4e0f078;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+
+
+#nav2 {
+    position: sticky;
+    top: 70px;
+    z-index: 1;
+}
+
+
+.sticky+.section_heading nav .content {
+    padding-top: 60px;
+}
+
+
+/* .sticky2 {
+    position: fixed;
+    top: 1rem;
+    width: 100%;
+}
+
+.sticky2 + .content {
+    padding-top: 60px;
+
+} */
+
+/* Carousel style */
+
+.slider {
+    overflow: hidden;
+    width: 100%;
+    height: 60vh;
+    position: relative;
+    margin-bottom: 2rem;
+    /**font: 20px 'Quicksand', Calibri;**/
+}
+
+.slider form {
+    float: right;
+}
+
+.slider figure div {
+    float: left;
+    width: 20%;
+}
+
+.slider figure img {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    float: left;
+    background: rgba(236, 230, 219, 255);
+    /* border-radius: 0% 0% 20% 20%; */
+}
+
+.slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    animation: animate 60s infinite;
+}
+
+.slide h1 {
+    position: absolute;
+    text-align: left;
+    font-size: 60px;
+    padding-top: 180px;
+    padding-left: 50px;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.slide p {
+    position: absolute;
+    text-align: left;
+    font-size: 20px;
+    padding-top: 280px;
+    padding-left: 50px;
+    width: 100%;
+    height: 100vh;
+}
+
+.slide .page_button {
+    position: absolute;
+    top: 350px;
+    left: 50px;
+}
+
+@keyframes animate {
+    0% {
+        left: 0%;
+    }
+
+    10% {
+        left: 0%;
+    }
+
+    12% {
+        left: -100%;
+    }
+
+    22% {
+        left: -100%;
+    }
+
+    24% {
+        left: -100%;
+    }
+
+    34% {
+        left: -200%;
+    }
+
+    36% {
+        left: -200%;
+    }
+
+    44% {
+        left: -200%;
+    }
+
+    46% {
+        left: -300%;
+    }
+
+    48% {
+        left: -300%;
+    }
+
+    58% {
+        left: -300%;
+    }
+
+    60% {
+        left: -200%;
+    }
+
+    70% {
+        left: -200%;
+    }
+
+    72% {
+        left: -200%;
+    }
+
+    82% {
+        left: -100%;
+    }
+
+    84% {
+        left: -100%;
+    }
+
+    94% {
+        left: -100%;
+    }
+
+    96% {
+        left: -0%;
+    }
+}
+
+/* BMI Calculator */
+/* BMI Calculator */
+/* BMI Calculator */
+#something {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 80%;
+}
+
+.bmiLabel {
+    font-weight: bold;
+}
+
+input {
+    margin: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px gray;
+}
+
+button {
+    margin: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: lightblue;
+    box-shadow: 0px 0px 5px #4bb2ee;
+}
+
+.result {
+    padding: 10px;
+    /* width: 100px;
+    height: 30px; */
+    border: 1px solid #EB91A7;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #ed5077;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+/* BMI Calculator END*/
+/* BMI Calculator END*/
+/* BMI Calculator END*/
+
+
+.slider2 {
+    overflow: hidden;
+    width: 100%;
+    height: 45vh;
+    position: relative;
+    margin-bottom: 2rem;
+    /**font: 20px 'Quicksand', Calibri;**/
+}
+
+.slider2 figure div {
+    float: left;
+    width: 20%;
+}
+
+.slider2 figure img {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    float: left;
+    background: rgba(236, 230, 219, 255);
+    /* border-radius: 0% 0% 20% 20%; */
+}
+
+.slider2 figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    height: 35vh;
+    position: fixed;
+
+}
+
+.banner {
+    width: 100%;
+    height: 35vh;
+    background-image: url(images/index1.png);
+    background-size: cover;
+    background-position: 69%;
+    position: fixed;
+}
+
+
+main {
+    margin: 2rem 5rem;
+    /* border: 1px dotted ; */
+    padding: 10px;
+
+}
+
+/* Homepage Style */
+/* Homepage Style */
+/* Homepage Style */
+
+.page_button {
+    width: 236px;
+    margin-bottom: 3rem;
+
+    padding: 0.5rem 1rem;
+    color: #000000;
+    font-size: 16px;
+    border: none;
+    border-radius: 12px;
+    outline: none;
+    cursor: pointer;
+    background: #68a66f;
+}
+
+
+#page_icons_about div {
+    margin: 2rem;
+    width: 100%;
+}
+
+
+.section_icon .about {
+    width: 100%;
+    height: 350px;
+    /* margin: 10px; */
+    padding: 2rem 2rem;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20% 0% 20% 0%;
+    outline: none;
+    cursor: pointer;
+    background-color: #C4E0F0;
+}
+
+#icons_about {
+    display: flex;
+    /* background-color: rgba(144, 204, 221, 0.538); */
+    margin: 1rem 1rem 3rem 1rem;
+    align-content: center;
+    justify-content: center;
+}
+
+#icons_about div {
+    align-items: center;
+    margin: 1rem 4rem;
+    width: 100%;
+}
+
+.section_icon .nutrition1 {
+    width: 100%;
+    height: 400px;
+    /* margin: 10px; */
+    padding: 2rem 2rem;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20% 0% 20% 0%;
+    outline: none;
+    cursor: pointer;
+    /* background: url(../images/n1.1.jpg); */
+    background-color: #C4E0F0;
+}
+
+.section_icon .nutrition2 {
+    width: 100%;
+    height: 400px;
+    /* margin: 10px; */
+    padding: 2rem 2rem;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20% 0% 20% 0%;
+    outline: none;
+    cursor: pointer;
+    /* background: url(../images/n2.jpg) no-repeat; */
+    background-color: #C4E0F0;
+
+}
+
+.section_icon .nutrition3 {
+    width: 100%;
+    height: 400px;
+    /* margin: 10px; */
+    padding: 2rem 2rem;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20% 0% 20% 0%;
+    outline: none;
+    cursor: pointer;
+    /* background: url(../images/n3.cms); */
+    background-color: #C4E0F0;
+
+}
+
+.section_icon .fitness1 {
+    width: 100%;
+    height: 400px;
+    /* margin: 10px; */
+    padding: 2rem 2rem;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20% 0% 20% 0%;
+    outline: none;
+    cursor: pointer;
+    background-color: #C4E0F0;
+    /* background: url(images/); */
+
+}
+
+.section_icon .fitness2 {
+    width: 100%;
+    height: 400px;
+    /* margin: 10px; */
+    padding: 2rem 2rem;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20% 0% 20% 0%;
+    outline: none;
+    cursor: pointer;
+    background-color: #C4E0F0;
+    /* background:  url(images/) no-repeat ; */
+}
+
+.section_icon .fitness3 {
+    width: 100%;
+    height: 400px;
+    /* margin: 10px; */
+    padding: 2rem 2rem;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20% 0% 20% 0%;
+    outline: none;
+    cursor: pointer;
+    background-color: #C4E0F0;
+    /* background: url(images/); */
+}
+
+.section_icon .lifestyle1 {
+    width: 100%;
+    height: 400px;
+    /* margin: 10px; */
+    padding: 2rem 2rem;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20% 0% 20% 0%;
+    outline: none;
+    cursor: pointer;
+    background-color: #C4E0F0;
+    /* background: url(images/); */
+
+}
+
+.section_icon .lifestyle2 {
+    width: 100%;
+    height: 400px;
+    /* margin: 10px; */
+    padding: 2rem 2rem;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20% 0% 20% 0%;
+    outline: none;
+    cursor: pointer;
+    background-color: #C4E0F0;
+    /* background:  url(images/) no-repeat ; */
+}
+
+.section_icon .lifestyle3 {
+    width: 100%;
+    height: 400px;
+    /* margin: 10px; */
+    padding: 2rem 2rem;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20% 0% 20% 0%;
+    outline: none;
+    cursor: pointer;
+    background-color: #C4E0F0;
+    /* background: url(images/); */
+}
+
+#page_icons {
+    display: flex;
+    /* background-color: rgba(144, 204, 221, 0.538); */
+    margin: 1rem 1rem 0rem 1rem;
+    align-content: center;
+    justify-content: center;
+}
+
+
+#icon_title {
+    display: flex;
+    margin: auto 70px;
+    /* background-color: rgba(144, 204, 221, 0.538); */
+    align-content: center;
+    justify-content: center;
+    font-weight: bold;
+
+}
+
+
+
+
+
+#feature {
+    width: 100%;
+    height: 400px;
+    /* margin: 10px; */
+    padding: 2rem 2rem;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20% 0% 20% 0%;
+    outline: none;
+    cursor: pointer;
+    background-color: #C4E0F0;
+
+}
+
+.section_icon2 {
+    width: 280px;
+    height: 250px;
+    margin: 10px;
+    /* padding: 2rem 2rem; */
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20% 0% 20% 0%;
+    outline: none;
+    cursor: pointer;
+    background-color: #C4E0F0;
+    text-align: center;
+    /* background: url(images/); */
+}
+
+
+#icons {
+    display: flex;
+    /* background-color: rgba(144, 204, 221, 0.538); */
+    border: 1px solid;
+    margin: 1rem 1rem 3rem 1rem;
+    align-content: center;
+    justify-content: center;
+}
+
+#icons div {
+    align-items: center;
+    margin: 2rem;
+    width: 100%;
+}
+
+button:hover {
+    box-shadow: 10px rgba(0, 0, 0, 1);
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    nav ul {
+        display: none;
+    }
+
+    nav button {
+        display: block;
+    }
+}
+
+nav button {
+    display: none;
+    background-color: #ffffff;
+    color: black;
+    border: none;
+    padding: 14px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color: #eb91a8be;
+    color: #ffffff;
+}
+
+nav.active ul {
+    display: block;
+}
+
+
+
+/**
+
+CSS for iPad screen
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    Your CSS code for iPad screen
+  }
+  
+  CSS for iPhone 11 screen
+  @media only screen and (max-width: 414px) {
+    Your CSS code for iPhone 11 screen
+  }
+  
