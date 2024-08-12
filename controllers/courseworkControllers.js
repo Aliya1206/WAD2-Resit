@@ -36,6 +36,37 @@ exports.show_lifestyle_page = function(req, res) {
     });
 }
 
+exports.show_charity1_page = function(req, res) {
+    // res.redirect('/charity1.html');
+    res.render('charity1', {
+        title: "Charity 1", 
+        user: "user"
+    });
+}
+
+exports.show_charity2_page = function(req, res) {
+    // res.redirect('/charity2.html');
+    res.render('charity2', {
+        title: "Charity 2", 
+        user: "user"
+    });
+}
+
+exports.show_charity3_page = function(req, res) {
+    // res.redirect('/charity3.html');
+    res.render('charity3', {
+        title: "Charity 3", 
+        user: "user"
+    });
+}
+
+exports.show_charity4_page = function(req, res) {
+    // res.redirect('/charity4.html');
+    res.render('charity4', {
+        title: "Charity 4", 
+        user: "user"
+    });
+}
 
 exports.post_new_user = function (req, res) {
     const user = req.body.username;
@@ -127,6 +158,70 @@ exports.show_new_entries_lifestyle = function(req, res){
 }
 
 
+exports.show_new_entries_charity1 = function(req, res){
+    db.getAllCharity1Entries()
+            .then((list, user) => {
+                res.render('newEntryCharity1', {
+                    'title': 'New Healthy Charity Entry',
+                    'charity1DB': list,
+                    'user': user
+                });
+                console.log('promise resolved');
+            })
+            .catch((err) => {
+                console.log('promise rejected', err);
+            })
+}
+
+
+exports.show_new_entries_charity2 = function(req, res){
+    db.getAllCharity2Entries()
+            .then((list, user) => {
+                res.render('newEntryCharity2', {
+                    'title': 'New Healthy Charity Entry',
+                    'charity2DB': list,
+                    'user': user
+                });
+                console.log('promise resolved');
+            })
+            .catch((err) => {
+                console.log('promise rejected', err);
+            })
+}
+
+
+exports.show_new_entries_charity3 = function(req, res){
+    db.getAllCharity3Entries()
+            .then((list, user) => {
+                res.render('newEntryCharity3', {
+                    'title': 'New Healthy Charity Entry',
+                    'charity3DB': list,
+                    'user': user
+                });
+                console.log('promise resolved');
+            })
+            .catch((err) => {
+                console.log('promise rejected', err);
+            })
+}
+
+
+exports.show_new_entries_charity4 = function(req, res){
+    db.getAllCharity4Entries()
+            .then((list, user) => {
+                res.render('newEntryCharity4', {
+                    'title': 'New Healthy Charity Entry',
+                    'charity4DB': list,
+                    'user': user
+                });
+                console.log('promise resolved');
+            })
+            .catch((err) => {
+                console.log('promise rejected', err);
+            })
+}
+
+
 exports.loggedIn_landing = function (req, res){
     db.getAllEntries().then((list) =>{
         res.render("index", {
@@ -174,7 +269,7 @@ exports.new_entries = function (req, res) {
 exports.post_new_entry = function (req, res) {
     console.log('processing post-new_entry conroller');
     if (!req.body.author) {
-        response.status(400).send("Entries must have an author.");
+        res.status(400).send("Entries must have an author.");
         return;
     }
     db.addEntry(req.body.author, req.body.subject, req.body.contents);
@@ -185,7 +280,7 @@ exports.post_new_entry = function (req, res) {
 exports.post_new_entries_nutrition = function (req, res) {
     console.log('processing post-new_entries_nutrition conroller');
     if (!req.body.author) {
-        response.status(400).send("Entries must have an author.");
+        res.status(400).send("Entries must have an author.");
         return;
     }
     db.addNutritionEntry(req.body.author, req.body.subject, req.body.contents, req.body.completionDate);
@@ -196,7 +291,7 @@ exports.post_new_entries_nutrition = function (req, res) {
 exports.post_new_entries_fitness = function (req, res) {
     console.log('processing post-new_entries_fitness conroller');
     if (!req.body.author) {
-        response.status(400).send("Entries must have an author.");
+        res.status(400).send("Entries must have an author.");
         return;
     }
     db.addFitnessEntry(req.body.author, req.body.subject, req.body.contents, req.body.completionDate);
@@ -205,15 +300,89 @@ exports.post_new_entries_fitness = function (req, res) {
 
 
 exports.post_new_entries_lifestyle = function (req, res) {
-    console.log('processing post-new_entries_lifestyle conroller');
+    console.log('processing post-new_entries_lifestyle controller');
     if (!req.body.author) {
-        response.status(400).send("Entries must have an author.");
+        res.status(400).send("Entries must have an author.");
         return;
     }
     db.addLifestyleEntry(req.body.author, req.body.subject, req.body.contents, req.body.completionDate);
     res.redirect("/loggedInLifestyle");
 }
 
+
+exports.post_new_entries_charity1 = function (req, res) {
+    console.log('Entered post_new_entries_charity1 controller');
+    const { author, subject, contents, price, quantity } = req.body;
+    if (!author || !subject || !contents) {
+        res.status(400).send("Missing required fields.");
+        return;
+    }
+    db.addCharity1Entry(author, subject, contents, price, quantity)
+      .then(() => {
+          console.log("Charity1 entry added successfully.");
+          res.redirect("/newCharity1"); // Or appropriate redirection
+      })
+      .catch(err => {
+          console.log("Error adding Charity1 entry:", err);
+          res.status(500).send("Error processing Charity1 entry.");
+      });
+};
+
+
+exports.post_new_entries_charity2 = function (req, res) {
+    console.log('Entered post_new_entries_charity2 controller');
+    const { author, subject, contents, price, quantity } = req.body;
+    if (!author || !subject || !contents) {
+        res.status(400).send("Missing required fields.");
+        return;
+    }
+    db.addCharity2Entry(author, subject, contents, price, quantity)
+      .then(() => {
+          console.log("Charity2 entry added successfully.");
+          res.redirect("/newCharity2"); // Or appropriate redirection
+      })
+      .catch(err => {
+          console.log("Error adding Charity2 entry:", err);
+          res.status(500).send("Error processing Charity2 entry.");
+      });
+};
+
+exports.post_new_entries_charity3 = function (req, res) {
+    console.log('Entered post_new_entries_charity3 controller');
+    const { author, subject, contents, price, quantity } = req.body;
+    if (!author || !subject || !contents) {
+        res.status(400).send("Missing required fields.");
+        return;
+    }
+    db.addCharity3Entry(author, subject, contents, price, quantity)
+      .then(() => {
+          console.log("Charity3 entry added successfully.");
+          res.redirect("/newCharity3"); // Or appropriate redirection
+      })
+      .catch(err => {
+          console.log("Error adding Charity3 entry:", err);
+          res.status(500).send("Error processing Charity3 entry.");
+      });
+};
+
+
+exports.post_new_entries_charity4 = function (req, res) {
+    console.log('Entered post_new_entries_charity4 controller');
+    const { author, subject, contents, price, quantity } = req.body;
+    if (!author || !subject || !contents) {
+        res.status(400).send("Missing required fields.");
+        return;
+    }
+    db.addCharity4Entry(author, subject, contents, price, quantity)
+      .then(() => {
+          console.log("Charity4 entry added successfully.");
+          res.redirect("/newCharity4"); // Or appropriate redirection
+      })
+      .catch(err => {
+          console.log("Error adding Charity4 entry:", err);
+          res.status(500).send("Error processing Charity4 entry.");
+      });
+};
 
 exports.loggedIn_landing_nutrition = function (req, res){
     db.getAllNutritionEntries().then((list) =>{
@@ -259,6 +428,62 @@ exports.loggedIn_landing_lifestyle = function (req, res){
     });
 }
 
+// COME BACK AND EDIT THE LIST AND MAKE A CHAIRTY 1 LIST 
+exports.loggedIn_landing_charity1 = function (req, res){
+    db.getAllCharity1Entries().then((list) =>{
+        res.render("charity1", {
+            title: "Charity 1",
+            charity1: list,
+            user: "user"
+        });
+        console.log("promise resolved");
+    })
+    .catch((err)=>{
+        console.log("promise rejeced", err);
+    });
+}
+
+exports.loggedIn_landing_charity2 = function (req, res){
+    db.getAllCharity2Entries().then((list) =>{
+        res.render("charity2", {
+            title: "Charity 2",
+            charity2: list,
+            user: "user"
+        });
+        console.log("promise resolved");
+    })
+    .catch((err)=>{
+        console.log("promise rejeced", err);
+    });
+}
+
+exports.loggedIn_landing_charity3 = function (req, res){
+    db.getAllCharity3Entries().then((list) =>{
+        res.render("charity3", {
+            title: "Charity 3",
+            charity3: list,
+            user: "user"
+        });
+        console.log("promise resolved");
+    })
+    .catch((err)=>{
+        console.log("promise rejeced", err);
+    });
+}
+
+exports.loggedIn_landing_charity4 = function (req, res){
+    db.getAllCharity4Entries().then((list) =>{
+        res.render("charity4", {
+            title: "Charity 4",
+            charity4: list,
+            user: "user"
+        });
+        console.log("promise resolved");
+    })
+    .catch((err)=>{
+        console.log("promise rejeced", err);
+    });
+}
 
 exports.peters_entries = function (req, res) {
     res.send('<h1>Processing Peter\'s Entries, see terminal</h1>');
@@ -279,4 +504,3 @@ exports.show_user_entries = function (req, res) {
             console.log('error handling author posts', err);
         });
 }
-

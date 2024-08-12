@@ -1,0 +1,108 @@
+<html>
+
+<head>
+  {{>header}}
+</head>
+
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="index.html"><img src="images/logo.png" width="80px" height="50px" alt="Charity Organisation Logo"></a></li>
+      <li><a href="/charity1">Charity 1</a></li>
+      <li><a href="/charity2">Charity 2</a></li>
+      <li><a href="/charity3">Charity 3</a></li>
+      <li><a href="/charity4">Charity 4</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Welcome to Charity Organisation</h1>
+    
+   <section>
+      <h2>Check out our charities.</h2>
+      <div class="charity-list">
+        <div class="charity-item">
+          <a href="/charity1">
+            <h3>Treasures & Trinkets</h3>
+            <p>Unique collectibles and rare finds.</p>
+          </a>
+        </div>
+        <div class="charity-item">
+          <a href="/charity2">
+            <h3>Fashion Finds</h3>
+            <p>Stylish and sustainable fashion items.</p>
+          </a>
+        </div>
+        <div class="charity-item">
+          <a href="/charity3">
+            <h3>Home & Decor</h3>
+            <p>Beautiful items to brighten your home.</p>
+          </a>
+        </div>
+        <div class="charity-item">
+          <a href="/charity4">
+            <h3>Book Nook</h3>
+            <p>A treasure trove of books for all ages.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Check out our charities.</h2>
+      <div class="charity-list">
+        <div class="charity-item">
+          <a href="/charity1">
+            <h3>Treasures & Trinkets</h3>
+            <p>Unique collectibles and rare finds.</p>
+          </a>
+        </div>
+        <div class="charity-item">
+          <a href="/charity2">
+            <h3>Fashion Finds</h3>
+            <p>Stylish and sustainable fashion items.</p>
+          </a>
+        </div>
+        <div class="charity-item">
+          <a href="/charity3">
+            <h3>Home & Decor</h3>
+            <p>Beautiful items to brighten your home.</p>
+          </a>
+        </div>
+        <div class="charity-item">
+          <a href="/charity4">
+            <h3>Book Nook</h3>
+            <p>A treasure trove of books for all ages.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Login/Register/Sign Out Section -->
+    <section class="volunteer-access">
+      <h2>Volunteer Access</h2>
+      <p>If you are a volunteer, please log in to add, edit, or update items in each charity shop.</p>
+      <div class="text-right" style="margin-bottom: 1em;">
+        {{^user}}
+        <a id="register" href="/register" class="btn form_button">
+          Register
+        </a>
+        <a id="login" href="/login" class="btn form_button">
+          Sign in
+        </a>
+        {{/user}}
+        {{#user}}
+        <a id="logout" href="/logout" class="btn form_button">
+          Sign out
+        </a>
+        {{/user}}
+      </div>
+    </section>
+    
+
+  </main>
+
+</body>
+
+</html>

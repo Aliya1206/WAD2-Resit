@@ -1,0 +1,13 @@
+{"author":"Oliver","subject":"bracelet","contents":"silver with gemstone","price":"40","quantity":"1","published":"2024-08-12","_id":"L2MNO1p4QwRSzvYD","createdAt":{"$$date":1723438777602},"updatedAt":{"$$date":1723438777602}}
+
+{"author":"Sophia","subject":"necklace","contents":"gold chain with ruby","price":"60","quantity":"2","published":"2024-08-12","_id":"M3NOP2q5RsTUwvZE","createdAt":{"$$date":1723441878602},"updatedAt":{"$$date":1723441878602}}
+
+{"author":"Ethan","subject":"ring","contents":"white gold","price":"80","quantity":"1","published":"2024-08-12","_id":"N4OPQ3r6StUVwxAF","createdAt":{"$$date":1723444979602},"updatedAt":{"$$date":1723444979602}}
+
+{"author":"Isabella","subject":"earrings","contents":"emerald","price":"100","quantity":"1","published":"2024-08-12","_id":"O5PQR4s7TuVWxyBG","createdAt":{"$$date":1723448080602},"updatedAt":{"$$date":1723448080602}}
+
+{"author":"Liam","subject":"brooch","contents":"vintage enamel","price":"55","quantity":"3","published":"2024-08-12","_id":"P6QRS5t8UvWXyzCH","createdAt":{"$$date":1723451181602},"updatedAt":{"$$date":1723451181602}}
+
+{"author":"Amelia","subject":"cufflinks","contents":"titanium","price":"45","quantity":"2","published":"2024-08-12","_id":"Q7RST6u9VwXYzaDI","createdAt":{"$$date":1723454282602},"updatedAt":{"$$date":1723454282602}}
+
+{"author":"James","subject":"pendant","contents":"platinum with sapphire","price":"90","quantity":"1","published":"2024-08-12","_id":"R8STU7v0WxYZabEJ","createdAt":{"$$date":1723457383602},"updatedAt":{"$$date":1723457383602}}

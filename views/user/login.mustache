@@ -4,50 +4,32 @@
     {{>header}}
 </head>
 
-
 <body>
-    <div class="background-image">
-        <div class="overlay">
-            <div class="text">
+    <div class="login-background">
+        <div class="login-overlay">
+            <div class="login-text">
                 <h1>Login</h1>
-                <p>Login to have full access to the nutrition, fitness, and healthy lifestyle pages.<br>
-                    Create and establish goals for each page, and access important information about each page.
-                </p>
+                <p>Please log in to manage stock, add new items, and access exclusive volunteer resources. Your contributions make a difference!</p>
             </div>
 
-            <div class="forum">
-
-
-                <form class="form" method="POST" action="login">
-                    <h1 class="form_title">Join Hyping Health</h1>
-                    <p class="form_text">
-                        to keep a record of your personal health goals and recieve important information
+            <div class="login-form">
+                <form class="form" method="POST" action="/login">
+                    <h1 class="form-title">Charity Login</h1>
+                    <p class="form-description">
+                        Log in to manage inventory and contribute to our mission of supporting cancer research.
                     </p>
-                    <div class="form_input-group">
-                        <label for="username" class="col-sm-2 col-formlabel">
-                            User Name
-                        </label>
-                        <div class="col-sm-10">
-                            <input type="text" id="form_input" id="username" name="username" placeholder="username">
-                        </div>
+                    <div class="form-input-group">
+                        <label for="username" class="form-label">Username</label>
+                        <input type="text" id="username" name="username" placeholder="Username">
                     </div>
-                    <div class="form_input-group">
-                        <label for="password" class="col-sm-2 col-formlabel">
-                            Password
-                        </label>
-                        <div class="col-sm-10">
-                            <input type="password" id="form_input" id="password" name="password" placeholder="password">
-                        </div>
+                    <div class="form-input-group">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Password">
                     </div>
-
-                    <div>
-
-                        <input  id="form_button" type="submit" value="Log In" class="btn btn-primary">
+                    <div class="form-actions">
+                        <input type="submit" value="Log In" class="form-button">
                     </div>
-
-                    <p class="form_text">Don't have an account? <a href="/register" class="form_link">Register</a></p>
-
-
+                    <p class="form-footer">Don't have an account? <a href="/register" class="form-link">Register here</a></p>
                 </form>
             </div>
         </div>

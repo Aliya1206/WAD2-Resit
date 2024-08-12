@@ -1,0 +1,21 @@
+[
+    {"author":"Anna","subject":"hand-painted mug","contents":"ceramic, floral patterns","price":"12","quantity":"15","published":"2024-08-13","_id":"Y1ZAb8c9D0efGH1","createdAt":{"$$date":1723569877602},"updatedAt":{"$$date":1723569877602}},
+
+    {"author":"Anna","subject":"upcycled tote bag","contents":"recycled fabric, various colors","price":"20","quantity":"8","published":"2024-08-13","_id":"Z2aBc1d0E1fgHI2","createdAt":{"$$date":1723572978602},"updatedAt":{"$$date":1723572978602}},
+
+    {"author":"Anna","subject":"handcrafted candle","contents":"scented, soy wax","price":"18","quantity":"12","published":"2024-08-13","_id":"A3bCd2e1F2ghIJ3","createdAt":{"$$date":1723576079602},"updatedAt":{"$$date":1723576079602}},
+
+    {"author":"John","subject":"wooden cutting board","contents":"cherry wood, engraved","price":"35","quantity":"6","published":"2024-08-13","_id":"B4cDe3f2G3hiJK4","createdAt":{"$$date":1723579180602},"updatedAt":{"$$date":1723579180602}},
+
+    {"author":"John","subject":"vintage camera","contents":"film camera, working","price":"100","quantity":"3","published":"2024-08-13","_id":"C5dEf4g3H4ijKL5","createdAt":{"$$date":1723582281602},"updatedAt":{"$$date":1723582281602}},
+
+    {"author":"John","subject":"handmade jewelry set","contents":"silver, includes necklace and earrings","price":"45","quantity":"5","published":"2024-08-13","_id":"D6eFg5h4I5jkLM6","createdAt":{"$$date":1723585382602},"updatedAt":{"$$date":1723585382602}},
+
+    {"author":"Maria","subject":"woven basket","contents":"natural fibers, handwoven","price":"25","quantity":"7","published":"2024-08-13","_id":"E7fGh6i5J6klMN7","createdAt":{"$$date":1723588483602},"updatedAt":{"$$date":1723588483602}},
+
+    {"author":"Maria","subject":"hand-stitched journal","contents":"leather cover, blank pages","price":"22","quantity":"10","published":"2024-08-13","_id":"F8gHi7j6K7lmNO8","createdAt":{"$$date":1723591584602},"updatedAt":{"$$date":1723591584602}},
+
+    {"author":"Maria","subject":"ceramic planter","contents":"glazed, small size","price":"15","quantity":"12","published":"2024-08-13","_id":"G9hIj8k7L8mnOP9","createdAt":{"$$date":1723594685602},"updatedAt":{"$$date":1723594685602}},
+
+    {"author":"Maria","subject":"handmade soap set","contents":"various scents, natural ingredients","price":"30","quantity":"9","published":"2024-08-13","_id":"H0iJk9l8M9noQR0","createdAt":{"$$date":1723597786602},"updatedAt":{"$$date":1723597786602}}
+]

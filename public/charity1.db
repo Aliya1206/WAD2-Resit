@@ -1,0 +1,4 @@
+{"author":"Liam","subject":"bracelet","contents":"gold-plated","price":"25","quantity":"2","published":"2024-08-11","_id":"F8HJK2k1LmNOPqrZ","createdAt":{"$$date":1723352374602},"updatedAt":{"$$date":1723352374602}}
+{"author":"Ella","subject":"necklace","contents":"silver chain","price":"30","quantity":"3","published":"2024-08-11","_id":"H9KLJ3m2NoOPstUA","createdAt":{"$$date":1723353375602},"updatedAt":{"$$date":1723353375602}}
+{"author":"Aiden","subject":"ring","contents":"platinum","price":"50","quantity":"1","published":"2024-08-11","_id":"J0LMK4n3OpQRuvWB","createdAt":{"$$date":1723354376602},"updatedAt":{"$$date":1723354376602}}
+{"author":"Mia","subject":"earrings","contents":"diamond-studded","price":"75","quantity":"2","published":"2024-08-11","_id":"K1NML5o4PqRSvwXC","createdAt":{"$$date":1723355377602},"updatedAt":{"$$date":1723355377602}}

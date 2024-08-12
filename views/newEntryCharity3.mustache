@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    {{>header}}
+</head>
+
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="/"><img src="images/logo.png" width="70px" height="50px" alt="Charity Organisation Logo"></a></li>
+      <li><a href="/charity1">Charity1</a></li>
+      <li><a href="/charity2">Charity2</a></li>
+      <li><a  class="active"  href="/charity3">Charity3</a></li>
+      <li><a href="/charity4">Charity4</a></li>
+    </ul>
+  </nav>
+
+
+  <div id="addFitnessItemBackground" class="add-item-background">
+    <div class="add-item-overlay">
+        <div class="add-item-text">
+            <h1>Add item to Charity 2</h1>
+        </div>
+        <form method="post" role="form" action="/newCharity3" id="addcharity3ItemForm" class="add-item-form">
+            <div class="form-input-group">
+                <label class="form-label" for="author">Author:</label>
+                <input type="text" id="author" name="author" placeholder="Enter author's name" required>
+            </div>
+            <div class="form-input-group">
+                <label class="form-label" for="itemName">Item Name:</label>
+                <input type="text" id="itemName" name="subject" placeholder="Enter item name" required>
+            </div>
+            <div class="form-input-group">
+                <label class="form-label" for="itemDescription">Description:</label>
+                <input type="text" id="itemDescription" name="contents" placeholder="Enter item description" required>
+            </div>
+            <div class="form-input-group">
+                <label class="form-label" for="itemPrice">Price (£):</label>
+                <input type="number" id="itemPrice" name="price" placeholder="Enter item price" step="0.01">
+            </div>
+            <div class="form-input-group">
+                <label class="form-label" for="itemQuantity">Quantity:</label>
+                <input type="number" id="itemQuantity" name="quantity" placeholder="Enter quantity" min="1">
+            </div>
+            <div class="form-actions">
+                <button type="submit" class="form-button">Add Item</button>
+                <button type="button" id="cancelBtn" class="form-cancel-button">Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+</body>
+
+</html>

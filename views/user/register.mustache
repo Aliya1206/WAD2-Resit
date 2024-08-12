@@ -5,41 +5,35 @@
 </head>
 
 <body>
-    <div class="background-image">
-        <div class="overlay">
-            <div class="text">
+    <div class="register-background">
+        <div class="register-overlay">
+            <div class="register-text">
                 <h1>Register</h1>
                 <p>
-                    Register to have full access to the nutrition, fitness, and healthy lifestyle pages.<br>
-                    Create and establish goals for each page, and access important information about each page.
+                    Register to gain access to volunteer resources, manage stock, and contribute to our mission.<br>
+                    Join us in our fight against cancer and make a meaningful difference.
                 </p>
             </div>
 
-            <div class="forum">
-
-                <form class="form" method="post" role="/register">
-                    <h1 class="form_title">Join Hyping Health</h1>
-                    <p class="form_text">
-                        to keep a record of your personal health goals and recieve important information
+            <div class="register-form">
+                <form class="form" method="post" action="/register">
+                    <h1 class="form-title">Create Your Account</h1>
+                    <p class="form-description">
+                        Register to contribute to our charity and help manage inventory and other important tasks.
                     </p>
-                    <div class="form_input-group">
+                    <div class="form-input-group">
                         {{user-name-error}}
-                        <label for="username">User Name</label>
-                        <input type="text" id="form_input" class="form-control" id="username" name="username"
-                            placeholder="Enter user name" required>
+                        <label for="username" class="form-label">Username</label>
+                        <input type="text" id="username" name="username" placeholder="Enter username" required>
                     </div>
-                    <div class="form_input-group">
-                        <label for="password">Password (8 characters minimum)</label>
-                        <input type="password" id="form_input" class="form-control" id="pass" name="pass"
-                            placeholder="Enter password" minlength="8" required>
+                    <div class="form-input-group">
+                        <label for="password" class="form-label">Password (8 characters minimum)</label>
+                        <input type="password" id="password" name="password" placeholder="Enter password" minlength="8" required>
                     </div>
-
-                    <div>
-                        <input id="form_button" type="submit" value="Register" class="btn btn-primary">
+                    <div class="form-actions">
+                        <input type="submit" value="Register" class="form-button">
                     </div>
-
-                    <p class="form_text">Already have an account? <a href="/login"> Log in </a> </p>
-
+                    <p class="form-footer">Already have an account? <a href="/login" class="form-link">Log in</a></p>
                 </form>
             </div>
         </div>

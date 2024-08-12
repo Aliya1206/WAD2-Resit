@@ -1,0 +1,99 @@
+<html>
+
+<head>
+  {{>header}}
+</head>
+
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="index.html"><img src="images/logo.png" width="80px" height="50px"
+            alt="Charity Organisation Logo"></a></li>
+      <li><a href="/charity1">Charity 1</a></li>
+      <li><a href="/charity2">Charity 2</a></li>
+      <li><a href="/charity3">Charity 3</a></li>
+      <li><a href="/charity4">Charity 4</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Welcome to Charity Organisation</h1>
+
+    <section>
+      <h2>About Us</h2>
+      <p>
+        Our local hospice charity operates four unique charity shops, each offering a diverse range of products.
+        We are not just about selling items; we’re about community support and giving back. Each of our shops is managed
+        by dedicated volunteers who ensure that donated items find a new home, with all proceeds supporting our hospice
+        services.
+      </p>
+      <p>
+        While we have a separate ecommerce operation, this platform allows our volunteers to showcase the unique items
+        available in each shop. Whether you’re hunting for vintage clothing, unique home decor, rare books, or eclectic
+        trinkets, our shops have something for everyone.
+      </p>
+      <p>
+        You can browse the available items at any of our shops, and our volunteers keep the listings up-to-date with
+        what’s in stock. Although items aren’t available for purchase online through this platform, you can visit the
+        shop in person to purchase any items that catch your eye.
+      </p>
+    </section>
+
+    <section>
+      <h2>Check out our charities.</h2>
+      <div class="charity-list">
+        <div class="charity-item">
+          <a href="/charity1">
+            <h6>Cancer Research</h6>
+            <p>Unique collectibles and rare finds.</p>
+          </a>
+        </div>
+        <div class="charity-item">
+          <a href="/charity2">
+            <h6>British Heart Foundation</h6>
+            <p>Stylish and sustainable fashion items.</p>
+          </a>
+        </div>
+        <div class="charity-item">
+          <a href="/charity3">
+            <h6>British Red Cross</h6>
+            <p>Beautiful items to brighten your home.</p>
+          </a>
+        </div>
+        <div class="charity-item">
+          <a href="/charity4">
+            <h3>National Trust</h6>
+            <p>A treasure trove of books for all ages.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Login/Register/Sign Out Section -->
+    <section class="volunteer-access">
+      <h2>Volunteer Access</h2>
+      <p>If you are a volunteer, please log in to add, edit, or update items in each charity shop.</p>
+      <div class="text-right" style="margin-bottom: 1em;">
+        {{^user}}
+        <a id="register" href="/register" class="btn form_button">
+          Register
+        </a>
+        <a id="login" href="/login" class="btn form_button">
+          Sign in
+        </a>
+        {{/user}}
+        {{#user}}
+        <a id="logout" href="/logout" class="btn form_button">
+          Sign out
+        </a>
+        {{/user}}
+      </div>
+    </section>
+
+
+  </main>
+
+</body>
+
+</html>

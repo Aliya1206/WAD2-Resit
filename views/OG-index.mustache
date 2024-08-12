@@ -1,0 +1,181 @@
+<html>
+
+<head>
+  {{>header}}
+</head>
+
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="profile.html"><img src="images/logo.png" width="80px" height="50px"></a></li>
+      <li><a href="/lifestyle">Healthy Lifestyle</a></li>
+      <li><a href="/fitness">Fitness</a></li>
+      <li><a href="/nutrition">Nutrition</a></li>
+      <li><a class="active" href="index.html">Home</a></li>
+
+    </ul>
+  </nav>
+
+  <div class="slider">
+
+    <figure>
+
+      <div class="slide">
+        <h1>What do we have to offer?</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit, sed do eiusmod <br>tempor incididunt ut labore
+          et dolore magna aliqua. Proin libero nunc consequat
+          interdum varius sit.
+        </p>
+        <img src="images/index1.png" alt="Hand stacking blocks">
+
+      </div>
+
+      <div class="slide">
+        <h1>Keep a track of your Diet!</h1>
+        <p>You are what you eat Your health is your wealth
+          Proper exercise and <br> good diet Unlock your potential
+          with good nutrition Good quality fuel for the car….
+          then why not for yourself?
+        </p>
+        <img src="images/index2.png" alt="Healthy foods on table">
+
+      </div>
+
+      <div class="slide">
+        <h1>Life is Better in Running Shoes!</h1>
+        <p>Keep track of your activities and let us recommend good
+          activities and exersices for you <br> depending on your health.
+          View your weekly progess and many more features.
+        </p>
+        <img src="images/index3.png" alt="Weights at the gym">
+
+      </div>
+
+      <div class="slide">
+        <h1>Your handy guidebook is here!</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit, sed do eiusmod <br>tempor incididunt ut labore
+          et dolore magna aliqua. Proin libero nunc consequat
+          interdum varius sit.
+        </p>
+        <img src="images/index4.png" alt="Fruits surrounded by health equipments">
+
+      </div>
+
+    </figure>
+  </div>
+
+  <main>
+
+
+    <h1>About</h1>
+    <br>
+    <h2 class="text-left">What is this website?</h2>
+    <p>Provide an overview of the website. What its purpose is and what
+      the developers intended for the website. Briefly go over the
+      features clearly include the websites interactive nature.
+    </p>
+
+    <h2 class="text-left">Target Market</h2>
+    <p>Explain who the target market is and why that particular
+      target market was chosen. Go into depth on how valuable
+      this app may be to the target market and how inclusive
+      it may be to people who are not specifically targeted.
+    </p>
+
+    <p> Sign in or Register to get access to our full functionality shown bellow </p>
+
+    <br>
+
+    <div class="text-right" style="margin-bottom: 1em;">
+      {{^user}}
+      <a id="login" href="/register" class="btn form_button">
+        Register
+      </a>
+      <a id="login" href="/login" class="btn form_button">
+        Sign in
+      </a>
+      {{/user}}
+      {{#user}}
+      <a id="logout" href="/logout" class="btn form_button">
+        Sign out
+      </a>
+      {{/user}}
+    </div>
+
+
+    <h1>Nutrition</h1>
+    <section id="icons" class="section_icon">
+      <div>
+        <a href="/nutrition">
+          <button class="nutrition1" type="button">Healthy Sustainable Diet</button> <br>
+        </a>
+      </div>
+
+      <div>
+        <a href="/nutrition">
+          <button class="nutrition2" type="button">Healthy Foods</button> <br>
+        </a>
+      </div>
+
+      <div>
+        <a href="/nutrition">
+          <button class="nutrition3" type="button">Plant Based Diet</button> <br>
+        </a>
+      </div>
+    </section>
+
+    <h1>Fitness</h1>
+    <section id="icons" class="section_icon">
+      <div>
+        <a href="/fitness">
+          <button class="fitness1" type="button">Exercise </button> <br>
+        </a>
+      </div>
+
+      <div>
+        <a href="/fitness">
+          <button class="fitness2" type="button">Home Workouts
+          </button> <br>
+        </a>
+      </div>
+
+      <div>
+        <a href="/fitness">
+          <button class="fitness3" type="button">Log Exercises</button> <br>
+        </a>
+      </div>
+    </section>
+
+    <h1>Healthy Lifestyle</h1>
+
+    <section id="icons" class="section_icon">
+      <div>
+        <a href="/lifestyle">
+          <button class="lifestyle1" type="button">Healthy Lifestyle</button> <br>
+        </a>
+      </div>
+
+      <div>
+        <a href="/lifestyle">
+          <button class="lifestyle1" type="button">Mental Health
+          </button> <br>
+        </a>
+      </div>
+
+      <div>
+        <a href="/lifestyle">
+          <button class="lifestyle1" type="button">BMI Calculator
+          </button> <br>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+
+</body>
+
+</html>
